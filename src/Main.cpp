@@ -15,5 +15,7 @@ int main(int argc, char *argv[]) {
 
     game->Destroy();
 
+    delete game;
+
     return 0;
 }
