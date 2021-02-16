@@ -108,4 +108,6 @@ CollisionType EntityManager::CheckCollisions() const {
             }
         }
     }
+
+    return NO_COLLISION;
 }
