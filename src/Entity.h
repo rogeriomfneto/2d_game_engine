@@ -43,7 +43,7 @@ class Entity {
         }
 
         template<typename T>
-        T* HasComponent() const {
+        int HasComponent() const {
             return componentTypeMap.count(&typeid(T));
         }
 };

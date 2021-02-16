@@ -23,12 +23,16 @@ class Game {
         static AssetManager *assetManager;
         static SDL_Event event;
         static SDL_Rect camera;
+        static bool colliderDebug;
         void LoadLevel(int levelNumber);
         void Initialize(int width, int height);
         void ProcessInput();
         void Update();
         void Render();
         void HandleCameraMovement();
+        void CheckCollisions();
+        void ProcessNextLevel(int levelNumber);
+        void ProcessGameOver();
         void Destroy();
 };
 

@@ -10,3 +10,8 @@ SDL_Texture* TextureManager::LoadTexture(const char* fileName) {
 void TextureManager::Draw(SDL_Texture* texture, SDL_Rect sourceRectangle, SDL_Rect destinationRectangle, SDL_RendererFlip flip) {
     SDL_RenderCopyEx(Game::renderer, texture, &sourceRectangle, &destinationRectangle, 0.0, NULL, flip);
 }
+
+void TextureManager::DrawRect(SDL_Rect rect) {
+    SDL_SetRenderDrawColor(Game::renderer, 255, 0, 0, 255);
+    SDL_RenderDrawRect(Game::renderer, &rect);
+}
