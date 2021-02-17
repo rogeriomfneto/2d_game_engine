@@ -13,6 +13,7 @@ class EntityManager {
     public:
         void ClearData();
         void Update(float deltaTime);
+        void DestroyInactiveEntities();
         void Render();
         bool HasNoEntities();
         void ListAllEntities();
